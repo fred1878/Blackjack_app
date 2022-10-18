@@ -1,0 +1,210 @@
+#blackjackContainer {
+    background-image: url(../img/background.jpeg);
+    padding: 3em;
+    height: 838px;
+    position: relative;
+}
+
+#player_count {
+    text-align: center;
+    color: black;
+    font-weight:700;
+    font-family: 'Copperplate';
+    font-size: 30px;
+    background-color: #EEE0CB;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px;
+    border-radius: 20em;
+
+}
+
+#dealer_count {
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    font-family: 'Copperplate';
+    font-size: 30px;
+    background-color: #EEE0CB;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px;
+    border-radius: 20em;
+    margin-bottom: 2rem;
+
+}
+
+#divider {
+    width: 30%;
+    border-bottom: #EEE0CB solid 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.chip_container{
+    width: 80%;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 5rem;
+    margin-bottom: 2%;
+    padding: 2em 0.5em;
+    border: 1px solid #222;
+	background: #b3eca9;
+	color: #306517;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    box-shadow: inset 0px 5px 25px 0px rgba(0,0,0,0.75);
+}
+
+.chip_img {
+    height: auto;
+    width: auto;
+    max-width: 8em;
+    padding-left: 1em;
+    cursor: pointer;
+    opacity: 95%;
+    z-index: auto;
+}
+
+#play_buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.play_button {
+    justify-content: center;
+    align-self: flex-start;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1em;
+    padding: 0.7em 1.4em 0.7em 1.1em;
+    color: #222;
+    background: linear-gradient(0deg, #948d85 0%, #EEE0CB 43%);
+    box-shadow: 0 0.7em 1.5em -0.5em #64796a98;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+    cursor: pointer;
+    margin: 0.5em auto;
+}
+
+.play_button:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em #1d282098;
+}
+
+.play_button:active {
+    box-shadow: 0 0.5em 1.5em -0.5em #1d282098;
+}
+
+.bet_button_container {
+    width: 35%;
+    text-align: center;
+    margin: 0.5em auto;
+    margin-bottom: 2em;
+    margin-top: 3rem;
+    padding: 1em 1em;
+    background-color: #eaedf1;
+    vertical-align: middle;
+    box-shadow: 0 0 15px;
+    border-radius: 4px;
+}
+
+.bet_button_container > p {
+    color: #222;
+}
+
+.bet_button {
+    display: flex;
+    font-weight: 500;
+    font-size: 1.2em;
+    padding: 0.7em 1.4em 0.7em 1.4em;
+    color: #222;
+    background: linear-gradient(0deg, #948d85 0%, #EEE0CB 43%);
+    box-shadow: 0 0.7em 1.5em -0.5em #64796a98;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+    cursor: pointer;
+    margin: 0.5em auto;
+    text-decoration: none;
+
+}
+
+#bet-buttons-div {
+    display: flex;
+}
+
+.bet_button:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em #1d282098;
+}
+
+.bet_button:active {
+    box-shadow: 0 0.5em 1.5em -0.5em #1d282098;
+}
+
+#top_box {
+    width: calc(100% - 6em);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    position: absolute;
+    top:0;
+    bottom:0;
+    margin-top:15rem;
+    height: 4rem;
+    /* left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+    z-index: auto;
+}
+
+#top_result {
+    width: 25%;
+    color: #222;
+    z-index: 10;
+    background-color: #EEE0CB;
+    padding: 2px;
+    border-radius: 4px;
+    box-shadow: 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#top_chips{
+    width: 25%;
+    color: #222;
+    z-index: 10;
+    background-color: #EEE0CB;
+    border-radius: 4px;
+    box-shadow: 0 0 20px;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#top_box h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+#top_chips.top_chips_locked_bet {
+    text-align: right;
+}
+
+#blackjackContainer > .bet_button {
+    /* margin-bottom: 10rem; */
+    overflow: hidden;
+}

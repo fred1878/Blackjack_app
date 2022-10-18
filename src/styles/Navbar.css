@@ -1,0 +1,155 @@
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    background-color: #EEE0CB;
+    font-size: 40px;
+    border: black solid 1px;
+    box-shadow: -10px 0px 20px rgba(0,0,0,0.4);
+    z-index: 10;
+    position:sticky;
+    top:0%;
+}
+
+#card-logo-1 {
+    height: 45px;
+    width: 30px;
+    
+    animation: rotation-2 3s infinite linear;
+
+    outline: black solid 1px;
+    border-radius: 4px;
+}
+
+@keyframes rotation-1 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+#card-logo-2 {
+    height: 45px;
+    width: 30px;
+    animation: rotation-1 3s infinite linear;
+
+    outline: black solid 1px;
+    border-radius: 4px;
+}
+
+@keyframes rotation-2 {
+    from {
+        transform: rotate(0deg);
+}
+    to{
+        transform: rotate(-359deg);
+    }
+}
+
+#website-banner {
+    color: black;
+    font-weight: 300;
+    font-size: 50px;
+    font-family: 'Copperplate';
+}
+
+#navbar-home {
+    display: flex;
+    justify-content: center;
+    background-color: forestgreen;
+    height: 75px;
+    width: 280px;
+    text-align: center;
+    border: black solid 1px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#navbar-home > a {
+    font-size: 20px;
+    font-weight: 600;
+    background-color: white;
+    border: black solid 2px;
+    border-radius: 4px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 7px 40px;
+    
+
+
+    text-decoration: none;
+    color: black;
+}
+
+
+#navbar > #navbar-home > a:hover {
+    background-color: black;
+    color: white;
+    border: white solid 2px;
+    border-radius: 30px;
+    transition-duration: 0.3s;
+}
+
+#navbar-dropdown-container {
+    display: flex;
+    height: 75px;
+    width: 280px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: forestgreen;
+    border: black solid 1px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;    
+}
+
+#navbar-signin-button {
+    text-decoration: none;
+    font-size: 20px;
+    width: 170px;
+    font-weight: 700;
+    color: black;
+    background-color: white;
+    border: black solid 2px;
+    border-radius: 4px;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+}
+
+#navbar-signin-button:hover {
+    background-color: black;
+    color: white;
+    border: white solid 2px;
+    border-radius: 30px;
+    transition-duration: 0.3s;
+}
+
+#navbar-myaccount {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#dropdown-item-button {
+    background-color: white ;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    margin: 10px;
+    border: black solid 2px;
+}
+
+#dropdown-item-button:hover {
+    background-color: black;
+    color: white;
+    border: white solid 2px;
+    border-radius: 30px;
+}
